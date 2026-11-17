@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DJ Dranix Kenya | The Baddest</title>
+    <meta name="description"
+        content="DJ Dranix Kenya — A professional DJ for Ruracio, wedding, club gig, private party, birthday & corporate events. Book via WhatsApp 0708 073 084.">
+    <style>
+        :root {
+            --bg: #08080a;
+            --surface: #111115;
+            --surface-card: #16161c;
+            --gold-1: #bf953f;
+            --gold-2: #fcf6ba;
+            --gold-3: #b38728;
+            --gold-4: #fbf5b7;
+            --gold-5: #aa771c;
+            --gold-gradient: linear-gradient(135deg, #bf953f 0%, #fcf6ba 35%, #b38728 65%, #aa771c 100%);
+            --gold-btn: linear-gradient(135deg, #e5be53 0%, #b38728 100%);
+            --text: #f5f5f5;
+            --muted: #a8a8b3;
+            --border: rgba(212, 175, 55, 0.22);
+            --wa: #25d366;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .gold-text {
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        /* Header & Nav */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(8, 8, 10, 0.92);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .brand {
+            font-weight: 900;
+            font-size: 1.25rem;
+            letter-spacing: 1px;
+        }
+
+        .brand span {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--muted);
+            margin-left: 0.4rem;
+        }
+
+        nav {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.95rem;
+            color: var(--muted);
+        }
+
+        nav a:hover {
+            color: #fcf6ba;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            border: none;
+        }
+
+        .btn-gold {
+            background: var(--gold-btn);
+            color: #08080a;
+            box-shadow: 0 4px 18px rgba(179, 135, 40, 0.35);
+        }
+
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.08);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text);
+        }
+
+        .btn-outline:hover {
+            border-color: #d4af37;
+            color: #fcf6ba;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4.5rem 1.5rem;
+        }
+
+        .eyebrow {
+            color: #d4af37;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+        }
+
+        /* Hero */
+        .hero {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4.5rem 1.5rem 2.5rem;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        @media (max-width: 850px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .hero h1 {
+            font-size: clamp(2.4rem, 5vw, 3.8rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.2rem;
+        }
+
+        .hero p {
+            color: var(--muted);
+            font-size: 1.05rem;
+            margin-bottom: 1.8rem;
+            max-width: 580px;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+        }
+
+        .stats {
+            display: flex;
+            gap: 2.2rem;
+            flex-wrap: wrap;
+            border-top: 1px solid var(--border);
+            padding-top: 1.5rem;
+        }
+
+        .stats div strong {
+            display: block;
+            font-size: 1.7rem;
+            background: var(--gold-gradient);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stats div span {
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+
+        .hero-card {
+            background: var(--surface-card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .hero-card img {
+            width: 100%;
+            max-height: 360px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            border: 1px solid var(--border);
+        }
+
+        .live-pill {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.15);
+            color: #fcf6ba;
+            border: 1px solid var(--border);
+            padding: 0.3rem 0.85rem;
+            border-radius: 99px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        /* Featured Branding Strip */
+        .branding-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .branding-info {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+        }
+
+        .branding-info img {
+            width: 72px;
+            height: 72px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+        }
+
+        /* About Grid */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        @media (max-width: 850px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .about-logo-box {
+            background: var(--surface-card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .about-logo-box img {
+            max-width: 220px;
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+            margin-top: 1.8rem;
+        }
+
+        @media (max-width: 600px) {
+            .about-features {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .mini-card {
+            background: var(--surface-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.3rem;
+        }
+
+        .mini-card h4 {
+            color: #fcf6ba;
+            margin-bottom: 0.4rem;
+        }
+
+        .mini-card p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        /* Mixtapes */
+        .player-bar {
+            background: var(--surface-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.4rem 1.8rem;
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--surface-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.6rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .tag {
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: #d4af37;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .card h3 {
+            margin-bottom: 0.6rem;
+            font-size: 1.25rem;
+        }
+
+        .card p {
+            color: var(--muted);
+            font-size: 0.92rem;
+            margin-bottom: 1.4rem;
+        }
+
+        /* Events */
+        .gig-date {
+            font-size: 1.1rem;
+            font-weight: 900;
+            color: #d4af37;
+        }
+
+        .gig-venue {
+            font-size: 0.88rem;
+            color: var(--muted);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Bookings */
+        .booking-wrap {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 2.5rem;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 2.2rem;
+        }
+
+        @media (max-width: 850px) {
+            .booking-wrap {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .contact-item {
+            background: var(--surface-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.1rem 1.3rem;
+            margin-top: 1rem;
+        }
+
+        .contact-item span {
+            display: block;
+            font-size: 0.82rem;
+            color: var(--muted);
+        }
+
+        .contact-item strong {
+            font-size: 1.05rem;
+            color: #fcf6ba;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        label.field-label {
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin-bottom: -0.5rem;
+            font-weight: 600;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg);
+            color: var(--text);
+            font-size: 0.95rem;
+            font-family: inherit;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #d4af37;
+        }
+
+        /* Quick Event Option Pills */
+        .quick-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .option-chip {
+            background: var(--surface-card);
+            border: 1px solid var(--border);
+            color: var(--muted);
+            padding: 0.4rem 0.75rem;
+            border-radius: 99px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .option-chip:hover,
+        .option-chip.active {
+            border-color: #d4af37;
+            background: rgba(212, 175, 55, 0.18);
+            color: #fcf6ba;
+        }
+
+        .success-box {
+            display: none;
+            background: rgba(212, 175, 55, 0.12);
+            border: 1px solid #d4af37;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            text-align: center;
+            padding: 2.2rem 1.5rem;
+        }
+
+        /* ===== ADDITIONS (preserve theme, only new features) ===== */
+
+        /* ===== Real images: hero logo, about studio shot, photo band ===== */
+        .hero-card .hero-logo {
+            width: 240px;
+            max-width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            margin: 0 auto 1.1rem;
+            display: block;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 40px rgba(179, 135, 40, 0.25);
+        }
+
+        .about-image {
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+        }
+
+        .about-image img {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Full-width photo band (the DJ behind the decks) */
+        .photo-band {
+            position: relative;
+            border-radius: 18px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+        }
+
+        .photo-band img {
+            width: 100%;
+            height: auto;
+            max-height: 440px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .photo-band-overlay {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 1.4rem 1.6rem;
+            background: linear-gradient(to top, rgba(8, 8, 10, 0.92) 0%, rgba(8, 8, 10, 0.55) 55%, rgba(8, 8, 10, 0) 100%);
+        }
+
+        .photo-band-overlay span {
+            color: var(--gold-2);
+            font-weight: 800;
+            font-size: 1.15rem;
+            letter-spacing: 0.5px;
+        }
+
+        .photo-band-overlay small {
+            display: block;
+            color: var(--muted);
+            font-size: 0.85rem;
+            margin-top: 0.2rem;
+        }
+
+        @media (max-width: 600px) {
+            .hero-logo {
+                width: 180px;
+            }
+
+            .photo-band img {
+                max-height: 300px;
+            }
+        }
+
+        /* "Other" description reveal */
+        #other-wrap {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: max-height 0.3s ease, opacity 0.25s ease, margin 0.25s ease;
+            margin: 0;
+        }
+
+        #other-wrap.show {
+            max-height: 320px;
+            opacity: 1;
+            margin-bottom: 0;
+        }
+
+        /* Form validation states */
+        .field-error input,
+        .field-error textarea,
+        .field-error .quick-options {
+            border-color: #e0533a !important;
+        }
+
+        .field-error .quick-options {
+            padding-bottom: 1.6rem;
+        }
+
+        .err-msg {
+            display: none;
+            font-size: 0.78rem;
+            color: #e0533a;
+            margin-top: 0.35rem;
+        }
+
+        .field-error .err-msg {
+            display: block;
+        }
+
+        .chip-hint {
+            font-size: 0.78rem;
+            color: var(--muted);
+            margin-top: 0.4rem;
+        }
+
+        /* Floating WhatsApp button */
+        .wa-float {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+            z-index: 1200;
+            background: var(--wa);
+            color: #fff;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.5);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .wa-float:hover {
+            transform: scale(1.08);
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.7);
+        }
+
+        .wa-float svg {
+            width: 30px;
+            height: 30px;
+        }
+
+        .wa-float::after {
+            content: "";
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            border: 2px solid rgba(37, 211, 102, 0.5);
+            animation: waPulse 2.4s ease-out infinite;
+        }
+
+        @keyframes waPulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        .btn-wa {
+            background: var(--wa);
+            color: #fff;
+            box-shadow: 0 4px 18px rgba(37, 211, 102, 0.35);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-wa:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.05);
+        }
+
+        .btn svg {
+            width: 1.1em;
+            height: 1.1em;
+            flex-shrink: 0;
+        }
+
+        .submit-row {
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            margin-top: 0.4rem;
+        }
+
+        .submit-row .btn {
+            flex: 1;
+            min-width: 180px;
+            text-align: center;
+        }
+
+        .platform-row {
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+        }
+
+        .platform-row .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .social-row {
+            display: flex;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+            margin-top: 0.8rem;
+        }
+
+        .social-row a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: var(--surface-card);
+            border: 1px solid var(--border);
+            color: var(--muted);
+            padding: 0.45rem 0.9rem;
+            border-radius: 99px;
+            font-size: 0.82rem;
+            transition: all 0.2s ease;
+        }
+
+        .social-row a:hover {
+            border-color: #d4af37;
+            color: #fcf6ba;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            align-items: center;
+        }
+
+        .footer-inner .social-row {
+            margin-top: 0;
+        }
+
+        /* Responsive nav tweaks (preserves look, prevents overflow on phones) */
+        @media (max-width: 720px) {
+            nav {
+                gap: 1rem;
+                font-size: 0.88rem;
+            }
+
+            .hero-btns .btn {
+                flex: 1 1 100%;
+                text-align: center;
+            }
+
+            .submit-row .btn {
+                min-width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .stats {
+                gap: 1.4rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ============================================================
+         IMAGES — keep these 3 files in the SAME folder as this HTML:
+           1. my logo.png     -> hero logo (top-right of the hero)
+           2. studio.jpg      -> About section (left of the text)
+           3. my photo.jpeg   -> full-width photo band below About
+         If a file name does not match exactly (including spaces),
+         that image will be blank. Names are case-sensitive on most servers.
+         ============================================================ -->
+
+    <!-- Floating WhatsApp button -->
+    <a class="wa-float"
+        href="https://wa.me/254708073084?text=Hi%20DJ%20Dranix%2C%20I%27d%20like%20to%20book%20you%20for%20an%20event."
+        target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" fill="currentColor">
+            <path
+                d="M16.01 3C9.39 3 4 8.39 4 15c0 2.12.55 4.18 1.6 6L4 29l8.18-1.55A12 12 0 0 0 16.01 27C22.62 27 28 21.62 28 15S22.62 3 16.01 3zm0 21.8c-1.66 0-3.28-.45-4.7-1.29l-.34-.2-4.85.92.92-4.73-.22-.35a9.78 9.78 0 0 1-1.5-5.21c0-5.43 4.42-9.85 9.86-9.85 2.63 0 5.1 1.03 6.96 2.89a9.78 9.78 0 0 1 2.89 6.97c0 5.43-4.42 9.85-9.86 9.85zm5.4-7.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.48.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35z" />
+        </svg>
+    </a>
+
+    <!-- Header / Nav -->
+    <header>
+        <div class="nav-wrap">
+            <div class="brand">DJ DRANIX <span class="gold-text">KENYA</span></div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#mixtapes">Mixes</a>
+                <a href="#events">Events</a>
+                <a href="#bookings">Book</a>
+            </nav>
+            <a href="#bookings" class="btn btn-gold">Hire for Event</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div>
+            <span class="eyebrow">Nairobi · Kenya · Available Worldwide</span>
+            <h1>The <span class="gold-text">Baddest</span> on the Decks.</h1>
+            <p>DJ Dranix Kenya — professional open-format DJ for Ruracios, weddings, club gigs, private parties,
+                birthdays &amp; corporate events. Clean edits, on time — every time.</p>
+            <!-- ORDER: Hire for Event FIRST, then Listen to My Mixes -->
+            <div class="hero-btns">
+                <a href="#bookings" class="btn btn-gold">Hire for Event →</a>
+                <a href="#mixtapes" class="btn btn-outline">▶ Listen to My Mixes</a>
+            </div>
+            <div class="stats">
+                <div><strong>500+</strong><span>Events &amp; gigs</span></div>
+                <div><strong>100%</strong><span>On-time show-up</span></div>
+            </div>
+        </div>
+        <div class="hero-card">
+            <!-- IMAGE FILE: my logo.png  (keep this file next to the HTML) -->
+            <img src="my logo.png" alt="DJ Dranix Kenya logo" class="hero-logo" width="240" height="240" />
+            <span class="live-pill">● Available for bookings</span>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <span class="eyebrow">About the DJ</span>
+        <h2>The sound behind <span class="gold-text">the night.</span></h2>
+        <div class="about-grid">
+            <div class="about-image">
+                <!-- IMAGE FILE: studio.jpg  (keep this file next to the HTML) -->
+                <img src="studio.jpg" alt="DJ Dranix Kenya studio — Pioneer decks and KRK monitors" loading="lazy" />
+            </div>
+            <div>
+                <p style="color:var(--muted);font-size:1rem;margin-bottom:1rem;">Rocking crowds across Kenya and beyond.
+                    From the soulful energy of a Ruracio to the deep pulse of a club floor, every set is built to keep
+                    people on their feet from the first track to the last.</p>
+                <p style="color:var(--muted);font-size:1rem;margin-bottom:1.8rem;">Full professional rig on request:
+                    Pioneer setup, pro sound, wireless mics, and dance-floor lighting. Professional run-of-show and a
+                    no-stress experience from booking to last song.</p>
+                <div class="about-features">
+                    <div class="mini-card">
+                        <h4>Genre-Fluid</h4>
+                        <p>Afrobeats, Amapiano, Gengetone, Hip-Hop, R&amp;B, House, Bongo, Throwbacks.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h4>Pro Equipment</h4>
+                        <p>Pioneer decks, pro sound system, wireless mics &amp; lighting on request.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h4>Clean Edits</h4>
+                        <p>Radio-clean versions available for family &amp; corporate events.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h4>Travel-Ready</h4>
+                        <p>Nairobi-based, available countrywide and for destination events.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo band: the DJ behind the decks -->
+    <section style="padding-top:0;">
+        <div class="photo-band">
+            <!-- IMAGE FILE: my photo.jpeg  (keep this file next to the HTML) -->
+            <img src="my photo.jpeg" alt="DJ Dranix Kenya behind the decks" loading="lazy" />
+            <div class="photo-band-overlay">
+                <span>DJ Dranix Kenya</span>
+                <small>The Baddest on the Decks · Nairobi</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mixtapes -->
+    <section id="mixtapes">
+        <span class="eyebrow">Listen before you book</span>
+        <h2>My <span class="gold-text">Mixes.</span></h2>
+        <p style="color:var(--muted);margin-bottom:1.5rem;max-width:620px;">Full sets, live recordings &amp; exclusive
+            mixes — streaming on YouTube and Mixcloud. Tap a platform below to listen, or pick a featured mix.</p>
+
+        <div class="player-bar">
+            <div>
+                <strong style="color:#fcf6ba;">Listen on your platform of choice</strong>
+                <div style="color:var(--muted);font-size:0.88rem;">youtube.com/@djdranixkenya ·
+                    mixcloud.com/djdranixkenya</div>
+            </div>
+            <div class="platform-row">
+                <a href="https://www.youtube.com/@djdranixkenya" target="_blank" rel="noopener" class="btn btn-gold">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M23 12s0-3.2-.2-4.7c-.1-.9-.8-1.6-1.7-1.7C19.5 5.4 12 5.4 12 5.4s-7.5 0-9.1.2c-.9.1-1.6.8-1.7 1.7C1 8.8 1 12 1 12s0 3.2.2 4.7c.1.9.8 1.6 1.7 1.7 1.6.2 9.1.2 9.1.2s7.5 0 9.1-.2c.9-.1 1.6-.8 1.7-1.7C23 15.2 23 12 23 12zM9.8 15.3V8.7l6.3 3.3-6.3 3.3z" />
+                    </svg>
+                    YouTube
+                </a>
+                <a href="https://www.mixcloud.com/djdranixkenya/" target="_blank" rel="noopener"
+                    class="btn btn-outline">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M21.5 16h-2a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2zm-4 0h-2a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2zm-4 0h-2a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2zM3 14a3 3 0 0 1 6 0 1 1 0 0 1-2 0 1 1 0 0 0-2 0v2h11a3 3 0 0 0 3-3 4 4 0 0 0-8-1.5A3 3 0 0 0 5 14.2 3 3 0 0 1 3 14z" />
+                    </svg>
+                    Mixcloud
+                </a>
+            </div>
+        </div>
+
+        <div class="grid-3">
+            <a href="https://www.youtube.com/@djdranixkenya" target="_blank" rel="noopener" class="card">
+                <div><span class="tag">Afrobeats</span>
+                    <h3>Afrobeats Heat Vol. 1</h3>
+                    <p>Smooth blends of the hottest Afrobeats &amp; Amapiano — built for the dance floor.</p>
+                </div>
+                <span class="live-pill">▶ Play on YouTube</span>
+            </a>
+            <a href="https://www.mixcloud.com/djdranixkenya/" target="_blank" rel="noopener" class="card">
+                <div><span class="tag">Open Format</span>
+                    <h3>Wedding Reception Set</h3>
+                    <p>Ceremony-to-afterparty flow: first dance, crowd-pleasers &amp; the late-night turn-up.</p>
+                </div>
+                <span class="live-pill">▶ Play on Mixcloud</span>
+            </a>
+            <a href="https://www.youtube.com/@djdranixkenya" target="_blank" rel="noopener" class="card">
+                <div><span class="tag">Throwbacks</span>
+                    <h3>90s &amp; 2000s Anthems</h3>
+                    <p>The classics that get every generation on their feet — clean edits throughout.</p>
+                </div>
+                <span class="live-pill">▶ Play on YouTube</span>
+            </a>
+        </div>
+        <p style="color:var(--muted);font-size:0.82rem;margin-top:1.2rem;">Mix titles above are samples — link them to
+            specific mixes on your channels anytime.</p>
+    </section>
+
+    <!-- Events -->
+    <section id="events">
+        <span class="eyebrow">Catch me live</span>
+        <h2>Where to <span class="gold-text">find me.</span></h2>
+        <p style="color:var(--muted);margin-bottom:1.5rem;max-width:620px;">Streaming sets live on YouTube &amp;
+            Mixcloud, and rocking live events across Kenya. Book your date below to bring the sound to you.</p>
+        <div class="grid-3">
+            <div class="card">
+                <div><span class="gig-venue">Streaming · Live sets</span><span class="gig-date">YouTube</span>
+                    <p style="margin-top:0.8rem;">@djdranixkenya — full mixes, live recordings &amp; exclusive sets.</p>
+                </div>
+                <a href="https://www.youtube.com/@djdranixkenya" target="_blank" rel="noopener" class="btn btn-outline"
+                    style="align-self:flex-start;">Visit channel →</a>
+            </div>
+            <div class="card">
+                <div><span class="gig-venue">Streaming · Archive</span><span class="gig-date">Mixcloud</span>
+                    <p style="margin-top:0.8rem;">mixcloud.com/djdranixkenya — on-demand replays of every set.</p>
+                </div>
+                <a href="https://www.mixcloud.com/djdranixkenya/" target="_blank" rel="noopener" class="btn btn-outline"
+                    style="align-self:flex-start;">Visit channel →</a>
+            </div>
+            <div class="card">
+                <div><span class="gig-venue">Live · Your event</span><span class="gig-date">Book a Date</span>
+                    <p style="margin-top:0.8rem;">Ruracio, wedding, club gig, private party, birthday or corporate —
+                        let's lock in your date.</p>
+                </div>
+                <a href="#bookings" class="btn btn-gold" style="align-self:flex-start;">Hire for Event →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bookings -->
+    <section id="bookings" style="padding-top:1rem;">
+        <span class="eyebrow">Book your date</span>
+        <h2>Hire me for <span class="gold-text">your event.</span></h2>
+        <p style="color:var(--muted);margin-bottom:1.5rem;max-width:620px;">Pick the service that fits — or choose
+            <strong style="color:#fcf6ba;">"Other"</strong> and describe it yourself. Submit via WhatsApp and I'll reply
+            within 24 hours with availability &amp; a quote.
+        </p>
+
+        <div class="booking-wrap">
+            <!-- Contact info -->
+            <div>
+                <h3 style="color:#fcf6ba;margin-bottom:0.4rem;">Get in touch</h3>
+                <p style="color:var(--muted);font-size:0.9rem;">Fastest response on WhatsApp. Available daily, 8am–10pm.
+                </p>
+
+                <a href="https://wa.me/254708073084?text=Hi%20DJ%20Dranix%2C%20I%27d%20like%20to%20book%20you%20for%20an%20event."
+                    target="_blank" rel="noopener" class="btn btn-wa" style="margin-top:1rem;width:100%;">
+                    <svg viewBox="0 0 32 32" fill="currentColor">
+                        <path
+                            d="M16.01 3C9.39 3 4 8.39 4 15c0 2.12.55 4.18 1.6 6L4 29l8.18-1.55A12 12 0 0 0 16.01 27C22.62 27 28 21.62 28 15S22.62 3 16.01 3zm5.4 14.8c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.48.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35z" />
+                    </svg>
+                    Chat on WhatsApp
+                </a>
+
+                <div class="contact-item">
+                    <span>Phone / WhatsApp</span>
+                    <strong><a href="tel:+254708073084">0708 073 084</a></strong>
+                </div>
+                <div class="contact-item">
+                    <span>Email</span>
+                    <strong><a href="mailto:djdranixkenya@gmail.com">djdranixkenya@gmail.com</a></strong>
+                </div>
+                <div class="contact-item">
+                    <span>Based in</span>
+                    <strong>Nairobi, Kenya · Available worldwide</strong>
+                </div>
+
+                <div class="social-row">
+                    <a href="https://www.youtube.com/@djdranixkenya" target="_blank" rel="noopener">YouTube</a>
+                    <a href="https://www.mixcloud.com/djdranixkenya/" target="_blank" rel="noopener">Mixcloud</a>
+                </div>
+            </div>
+
+            <!-- Booking form -->
+            <div>
+                <h3 style="color:#fcf6ba;margin-bottom:0.4rem;">Booking</h3>
+                <p style="color:var(--muted);font-size:0.9rem;margin-bottom:0.4rem;">Just your name, phone, date &amp;
+                    the service — we'll handle the rest on WhatsApp.</p>
+                <form id="bookingForm" novalidate>
+                    <div class="success-box" id="successBox">
+                        ✅ <strong>Request ready!</strong> Opening WhatsApp with your details pre-filled — just hit send
+                        and I'll reply within 24 hours.
+                    </div>
+
+                    <div>
+                        <label class="field-label" for="name">Full Name *</label>
+                        <input type="text" id="name" placeholder="e.g. Jane Wanjiru" />
+                        <div class="err-msg">Please enter your name.</div>
+                    </div>
+
+                    <div>
+                        <label class="field-label" for="phone">Phone *</label>
+                        <input type="tel" id="phone" placeholder="e.g. 0712 345 678" />
+                        <div class="err-msg">Please enter a valid phone number.</div>
+                    </div>
+
+                    <div>
+                        <label class="field-label" for="date">Event Date *</label>
+                        <input type="date" id="date" />
+                        <div class="err-msg">Please pick an event date.</div>
+                    </div>
+
+                    <!-- SERVICE PICKER: chips + "Other" -->
+                    <div id="serviceField">
+                        <label class="field-label">Service / Event Type *</label>
+                        <div class="quick-options" id="serviceChips" style="margin-top:0.4rem;">
+                            <button type="button" class="option-chip" data-value="Ruracio">Ruracio</button>
+                            <button type="button" class="option-chip" data-value="Wedding">Wedding</button>
+                            <button type="button" class="option-chip" data-value="Club Gig">Club Gig</button>
+                            <button type="button" class="option-chip" data-value="Private Party">Private Party</button>
+                            <button type="button" class="option-chip" data-value="Birthday Party">Birthday
+                                Party</button>
+                            <button type="button" class="option-chip" data-value="Corporate Event">Corporate
+                                Event</button>
+                            <button type="button" class="option-chip" data-value="Other">Other</button>
+                        </div>
+                        <div class="chip-hint">Pick from the list — choose <strong style="color:#fcf6ba;">Other</strong>
+                            if your event isn't here.</div>
+                        <div class="err-msg">Please pick a service.</div>
+                    </div>
+
+                    <!-- "Other" conditional description -->
+                    <div id="other-wrap">
+                        <label class="field-label" for="otherDesc">Describe Your Event *</label>
+                        <textarea id="otherDesc" rows="3"
+                            placeholder="Tell me about it — what kind, where, how many guests, the vibe you want…"></textarea>
+                        <div class="err-msg">Please describe your event.</div>
+                    </div>
+
+                    <div class="submit-row">
+                        <button type="submit" class="btn btn-wa">
+                            <svg viewBox="0 0 32 32" fill="currentColor">
+                                <path
+                                    d="M16.01 3C9.39 3 4 8.39 4 15c0 2.12.55 4.18 1.6 6L4 29l8.18-1.55A12 12 0 0 0 16.01 27C22.62 27 28 21.62 28 15S22.62 3 16.01 3zm5.4 14.8c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.48.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35z" />
+                            </svg>
+                            Send via WhatsApp
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="brand">DJ DRANIX <span class="gold-text">KENYA</span></div>
+            <div style="color:var(--muted);font-size:0.9rem;">The Baddest on the Decks · Nairobi, Kenya</div>
+            <div class="social-row">
+                <a href="https://wa.me/254708073084" target="_blank" rel="noopener">WhatsApp</a>
+                <a href="tel:+254708073084">Call 0708 073 084</a>
+                <a href="mailto:djdranixkenya@gmail.com">Email</a>
+                <a href="https://www.youtube.com/@djdranixkenya" target="_blank" rel="noopener">YouTube</a>
+                <a href="https://www.mixcloud.com/djdranixkenya/" target="_blank" rel="noopener">Mixcloud</a>
+            </div>
+            <div style="color:var(--muted);font-size:0.8rem;margin-top:0.6rem;">© 2026 DJ Dranix Kenya. All rights
+                reserved.</div>
+        </div>
+    </footer>
+
+    <script>
+        /* ===== Service chip picker (single-select) + "Other" reveal ===== */
+        const chips = document.querySelectorAll('#serviceChips .option-chip');
+        const otherWrap = document.getElementById('other-wrap');
+        const otherDesc = document.getElementById('otherDesc');
+        const serviceField = document.getElementById('serviceField');
+        let selectedService = '';
+
+        chips.forEach(chip => {
+            chip.addEventListener('click', () => {
+                chips.forEach(c => c.classList.remove('active'));
+                chip.classList.add('active');
+                selectedService = chip.dataset.value;
+
+                if (selectedService === 'Other') {
+                    otherWrap.classList.add('show');
+                    otherDesc.setAttribute('required', 'required');
+                } else {
+                    otherWrap.classList.remove('show');
+                    otherDesc.removeAttribute('required');
+                    otherDesc.value = '';
+                }
+                serviceField.classList.remove('field-error');
+            });
+        });
+
+        /* ===== Form validation + WhatsApp / Email submit ===== */
+        const form = document.getElementById('bookingForm');
+        const successBox = document.getElementById('successBox');
+        const WA_NUMBER = '254708073084';
+
+        function val(id) { return (document.getElementById(id).value || '').trim(); }
+        function setError(id, on) {
+            const f = document.getElementById(id).closest('div');
+            if (f) f.classList.toggle('field-error', !!on);
+        }
+        function validPhone(v) { return /^[+]?[\d\s\-()]{7,}$/.test(v); }
+
+        function validate() {
+            let ok = true;
+            const name = val('name'), phone = val('phone'),
+                date = val('date'), other = val('otherDesc');
+
+            setError('name', !name); if (!name) ok = false;
+            setError('phone', !validPhone(phone)); if (!validPhone(phone)) ok = false;
+            setError('date', !date); if (!date) ok = false;
+
+            if (!selectedService) { serviceField.classList.add('field-error'); ok = false; }
+            else { serviceField.classList.remove('field-error'); }
+
+            if (selectedService === 'Other' && other.length < 5) {
+                otherDesc.closest('div').classList.add('field-error');
+                ok = false;
+            }
+            return ok;
+        }
+
+        function buildMessage() {
+            const lines = [
+                'New Booking Request — DJ Dranix Kenya',
+                '',
+                'Name: ' + val('name'),
+                'Phone: ' + val('phone'),
+                'Event Date: ' + val('date'),
+                'Service: ' + (selectedService === 'Other' ? 'Other — ' + val('otherDesc') : selectedService)
+            ];
+            return lines.join('\n');
+        }
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            if (!validate()) {
+                const firstErr = form.querySelector('.field-error');
+                if (firstErr) firstErr.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                return;
+            }
+            const msg = buildMessage();
+            successBox.classList.add('show');
+            window.open('https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg), '_blank');
+            successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+
+        /* Clear error state as user types */
+        ['name', 'phone', 'date', 'otherDesc'].forEach(id => {
+            const el = document.getElementById(id);
+            if (!el) return;
+            el.addEventListener('input', () => setError(id, false));
+        });
+    </script>
+</body>
+
+</html>
